@@ -1,0 +1,7 @@
+{
+  "extends": "../tsconfig.views.json",
+  "compilerOptions": {
+    "baseUrl": "./"
+  },
+  "include": ["../model/**/*.ts", "../model/**/*.tsx", "**/*.ts", "**/*.tsx"]
+}

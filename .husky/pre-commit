@@ -1,0 +1,15 @@
+#!/bin/sh
+
+. "$(dirname "$0")/_/husky.sh"
+
+# Load nvm and use Node.js version from .nvmrc
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# use .nvmrc
+nvm use
+
+# check version
+node --version
+
+npx yarn pre-commit

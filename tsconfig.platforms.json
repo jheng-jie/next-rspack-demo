@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@/*": ["./*"],
+      "@views-a/*": ["../../views-a/*"],
+      "@views-b/*": ["../../views-b/*"],
+      "@model/*": ["../../model/*"],
+      "@model": ["../../model"],
+      "@style/*": ["../../model/style/*"],
+      "@core/*": ["../../model/core/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "target": "ES2017"
+  },
+  "include": ["這裡是示範，繼承後要重新覆蓋", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

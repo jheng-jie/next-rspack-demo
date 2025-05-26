@@ -1,0 +1,10 @@
+{
+  "name": "@app/model",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "pbjs-prepare": "npm install protobufjs-cli protobufjs -g",
+    "proto": "npx pbjs -t json -o @apis/on/socket/assets/on-event.json model/apis/on/proto/onbet.proto"
+  }
+}

@@ -1,0 +1,1 @@
+export { getStaticProps, default } from '@views-a/home'
