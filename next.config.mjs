@@ -1,10 +1,12 @@
 import createBundleAnalyzer from '@next/bundle-analyzer'
 import StatoscopeWebpackPlugin from '@statoscope/webpack-plugin'
 import withRspack from 'next-rspack'
+import withNextPWA from 'next-pwa'
 
 const isDev = process.env.NODE_ENV === 'development'
 
 const withPWA = (config) => withRspack(config)
+// const withPWA = (config) => withNextPWA(withRspack(config)) // PWA Fail
 
 /** Analyze */
 const withBundleAnalyzer = createBundleAnalyzer({ enabled: process.env.ANALYZE === 'true', analyzerMode: 'static' })

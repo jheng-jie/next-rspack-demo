@@ -34,3 +34,11 @@ yarn success
 yarn success2
 ```
 
+## Other issues: PWA
+
+- `next.config.mjs`
+
+```js
+// const withPWA = (config) => withRspack(config)
+const withPWA = (config) => withNextPWA(withRspack(config)) // Using this line will result in an error
+```
